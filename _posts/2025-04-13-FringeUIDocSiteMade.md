@@ -65,10 +65,14 @@ the Ribbon that works like any other.
     - Toaster
 
 ## Make Your First Tab, Group and Button (Tutorial)
+
 > WIP
+{: .prompt-info }
 
 ## Extend Modules to Support MultiUILoader (Tutorial)
+
 > WIP
+{: .prompt-info }
 
 ## Module Overview
 
@@ -87,6 +91,7 @@ will take the group and button of Mod 2 and append them to Mod 1.
 ![Simplified Flowchart of the MultiLoader Build Process](https://scorpiogameking.github.io/FringeUI/git_assets/images/MultiLoaderFlowChartSimple.png)
 
 ### FringeUIPackage
+
 > This will be refactored due potential to name confusion
 {: .prompt-info }
 
