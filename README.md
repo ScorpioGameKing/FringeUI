@@ -1,43 +1,94 @@
-# Chirpy Starter
+# FringeUI
+A VBA based Solution for your Office Customization Needs
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+![Example Custom Ribbon with Default Re-Loader and User Made Hello World Buttons](https://github.com/ScorpioGameKing/FringeUI/blob/main/git_assets/images/HelloWordExampleBanner.png)
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## What is FringeUI?
+I'm glad you asked. `FringeUI` is an incredibly Fringe use-case of VBA to decorate the "Fringe", 
+aka the Ribbon, of your Office App Window with your own Custom Tabs, Groups, Buttons and more! 
+Do you have that one Macro you use every day but it's a *total pain* to open the menu every 
+time? Got that ugly **CommandButton** you threw on a blank sheet to help clean up stray data? No
+More! With `FringeUI` you're a few simple lines away from having a stylish and clean button in
+the Ribbon that works like any other. 
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Current Features
+- Custom Tabs
+    > Create, name and organize your own custom tabs
+- Custom Groups
+    > Group Components using custom groups to keep related features together
+- Custom Buttons
+    > Create Custom Buttons using built-in icons and your own custom callbacks
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+## Planned Features
+- Custom Menus
+    > When a Group is not enough, list Components together in a handy dropdown
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+### How to Install Modules
+1. Find and click the "Developer" Tab in the Ribbon.
+> [!IMPORTANT]
+> If you are missing the "Developer" Tab go to File -> Options -> Customize Ribbon and Click the 
+> checkbox next to "Developer"
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+2. Find and click "Visual Basic", This will open another Window, "Microsoft Visual Basic for Applications"
+3. In this Window, Find in the top left the "File" Dropdown and select "Import Module" (Ctrl + M)
+4. Find and install each of the Required Modules Below as needed
 
-## Usage
+## Install Process (Single UI)
+### Required Modules
+- Class Module List
+    - FringeUIManager
+    - FringeUIPackage
+- Module List
+    - RealityCheck
+    - Toaster
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+## Install Process (MultiUILoader Module)
+### Required Modules
+- Class Module List
+    - FringeUIManager
+    - FringeUIMultiLoader
+    - FringeUIPackage
 
-## Contributing
+- Module List
+    - FringeUIReloader
+    - RealityCheck
+    - Toaster
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+## Make Your First Tab, Group and Button (Tutorial)
+> WIP
 
-## License
+## Extend Modules to Support MultiUILoader (Tutorial)
+> WIP
 
-This work is published under [MIT][mit] License.
+## Module Overview
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+### FringeUIManager
+`FringeUIManager` is the core UI Injection Class. `FringeUI` takes advantage of the fact the a User has a local instance of the OfficeUI file.
+It finds and grabs this file and using a `FringeUIPackage` created through the `FringeUIPackage` Class it will inject prebuilt XML strings for each
+component a User Defines. 
+
+### FringeUIMultiLoader
+`FringeUIMultiLoader` is the supporting framework for allowing indivdual User Modules to provide their own `FringeUIPackages` to be sorted and merged.
+When the `FringeUIMultiLoader` is in use, instead of the User Module building it's `FringeUIPackage`, it will be sent to the `FringeUIMultiLoader` Packages. 
+When all `FringeUIPackages` have been recived the `FringeUIMultiloader` needs to collapse all valid posiblities into a single package, always adding to 
+existing Components. For example, If User Mod 1 defines a Tab, group and button while User Mod 2 defines the same tab but a different group and button it 
+will take the group and button of Mod 2 and append them to Mod 1.
+
+![Simplified Flowchart of the MultiLoader Build Process](https://github.com/ScorpioGameKing/FringeUI/blob/main/git_assets/images/MultiLoaderFlowChartSimple.png)
+
+### FringeUIPackage
+> [!NOTE]
+> This will be refactored due potential to name confusion
+
+`FringeUIPackage` is the `FringeUIPackage` Builder. All `FringeUIPackages` require a Tab and Group to be able add a component. To create and build a package 
+simply call `YourUIPackage.AddComponentNameHere arg1, arg2, ...` to add your components and pass the `YourUIPackage.uiPackage` to either the `FringeUIMultiLoader` 
+or `FringeUIManager`
+
+### FringeUIReloader
+Small Standard Module included to provide a default ReLoad Method for `FringeUIManager`'s and `FringeUIMultiLoader`'s default Tool Menu. 
+
+### RealityCheck
+Helpful Libray of Sanity Checks.
+
+### Toaster
+Simple Timed MsgBox Alternative
