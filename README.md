@@ -26,7 +26,7 @@ the Ribbon that works like any other.
 ### How to Install Modules
 1. Find and click the "Developer" Tab in the Ribbon.
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > If you are missing the "Developer" Tab go to File -> Options -> Customize Ribbon and Click the 
 > checkbox next to "Developer"
 
@@ -58,12 +58,12 @@ the Ribbon that works like any other.
 
 ## Make Your First Tab, Group and Button (Tutorial)
 
-[!NOTE]
+> [!NOTE]
 > WIP
 
 ## Extend Modules to Support MultiUILoader (Tutorial)
 
-[!NOTE]
+> [!NOTE]
 > WIP
 
 ## Module Overview
