@@ -6,9 +6,9 @@ Public Sub InitUI(Optional multiLoader As Variant)
     If FringeUI Is Nothing Then Set FringeUI = New FringeUIManager
     If uiPackage Is Nothing Then Set uiPackage = New FringeUIPackage
     
-    uiPackage.AddTab "PPTLinker", "My New Tab", "mso:TabFormat"
-    uiPackage.AddGroup "PPTLinker", "MyNewGroup", "My New Group", "true"
-    uiPackage.AddButton "PPTLinker", "MyNewGroup", "HelloWorld", "Hello World!", "PanningHand", "MyCoolMod.HelloWorld"
+    uiPackage.AddTab "MyCoolTab", "My New Tab", "mso:TabFormat"
+    uiPackage.AddGroup "MyCoolTab", "MyNewGroup", "My New Group", "true"
+    uiPackage.AddButton "MyCoolTab", "MyNewGroup", "HelloWorld", "Hello World!", "PanningHand", "MyCoolMod.HelloWorld"
     
     If multiLoader Is Nothing Then
         FringeUIReloader.SetUIPackage uiPackage.uiPackage

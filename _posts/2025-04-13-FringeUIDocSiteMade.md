@@ -46,23 +46,24 @@ the Ribbon that works like any other.
 ## Install Process (Single UI)
 ### Required Modules
 - Class Module List
-    - FringeUIManager
-    - FringeUIPackage
+    - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
+    - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
 - Module List
-    - RealityCheck
-    - Toaster
+    - [FringeUIReloader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIReloader/)
+    - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
+    - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
 
 ## Install Process (MultiUILoader Module)
 ### Required Modules
 - Class Module List
-    - FringeUIManager
-    - FringeUIMultiLoader
-    - FringeUIPackage
+    - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
+    - [FringeUIMultiLoader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIMultiLoader/)
+    - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
 
 - Module List
-    - FringeUIReloader
-    - RealityCheck
-    - Toaster
+    - [FringeUIReloader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIReloader/)
+    - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
+    - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
 
 ## Make Your First Tab, Group and Button (Tutorial)
 

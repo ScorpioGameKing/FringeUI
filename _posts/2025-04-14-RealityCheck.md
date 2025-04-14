@@ -7,13 +7,30 @@ description: An overview of how the RealityCheck works and should be used.
 ---
 
 # RealityCheck
+A Collection of helpful search Functions for checking modules, collections and
+dynamic string subsections.
 
 ## IsClassModuleLoaded
 
+> WIP
+{: .prompt-info }
+
 ## IsStandardModuleLoaded
+
+> WIP
+{: .prompt-info }
 
 ## IsAnyModuleLoaded
 
+> WIP
+{: .prompt-info }
+
 ## InCollection
 
+> WIP
+{: .prompt-info }
+
 ## ReturnBetweenElements
+
+> WIP
+{: .prompt-info }
