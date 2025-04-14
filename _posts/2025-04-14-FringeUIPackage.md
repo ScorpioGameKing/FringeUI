@@ -6,7 +6,8 @@ tags: [documentation, class-module, module]
 description: An overview of how the FringeUIPackage works and should be used.
 ---
 
-# FringeUIPackage
+## FringeUIPackage Overview
+
 The FringeUIPackage is the actual skeleton of your Custom UI. To create a new UIPackage add the following
 anywhere you can `Set`:
 
@@ -62,4 +63,5 @@ It should not be manipulated directly and instead handled by the relavant subrou
 {: .prompt-info }
 
 ## Link to Module
+
 [FringeUIPackage on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIPackage.cls)

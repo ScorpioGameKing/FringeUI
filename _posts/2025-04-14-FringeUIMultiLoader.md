@@ -6,7 +6,8 @@ tags: [documentation, class-module, module]
 description: An overview of how the FringeUIMultiLoader works and should be used.
 ---
 
-# FringeUIMultiLoader
+## FringeUIMultiLoader Overview
+
 The FringeUIMultiLoader is used to merge multiple modules with custom FringeUI components.
 It works first in first out so the subsequent modules will be appended to existing Tabs
 and groups if they exist. To prepare the multiloader, multiple [FringeUIPackages](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
@@ -40,4 +41,5 @@ and the MultiLoader will begin to collapse the UIPackages into a single valid UI
 {: .prompt-info }
 
 ## Link to Module
+
 [FringeUIMultiLoader on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIMultiLoader.cls)

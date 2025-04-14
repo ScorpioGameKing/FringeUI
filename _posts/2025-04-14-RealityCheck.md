@@ -6,7 +6,8 @@ tags: [documentation, standard-module, module]
 description: An overview of how the RealityCheck works and should be used.
 ---
 
-# RealityCheck
+## RealityCheck Overview
+
 A Collection of helpful search Functions for checking modules, collections and
 dynamic string subsections.
 
@@ -97,4 +98,5 @@ Returns:
 ```
 
 ## Link to Module
+
 [RealityCheck on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/modules/FringeUI/RealityCheck.bas)

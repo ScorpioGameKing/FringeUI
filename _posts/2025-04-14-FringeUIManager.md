@@ -6,7 +6,8 @@ tags: [documentation, class-module, module]
 description: An overview of how the FringeUIManager works and should be used.
 ---
 
-# FringeUIManager
+## FringeUIManager Overview
+
 The FringeUIManager is the "Core" of FringeUI. It handles the final steps of injecting
 a [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/) 
 into the RibbonXML. It also handles the cleaning before exiting to restore the default
@@ -66,4 +67,5 @@ in either `Workbook_BeforeClose` and or `Workbook_Deactivate`.
 {: .prompt-info }+
 
 ## Link to Module
+
 [FringeUIManager on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIManager.cls)

@@ -6,7 +6,8 @@ tags: [documentation, standard-module, module]
 description: An overview of how the FringeUIReloader works and should be used.
 ---
 
-# FringeUIReloader
+## FringeUIReloader Overview
+
 The *Idea* of the FringeUIRekoader is to allow us to update the current [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
 or [FringeUIMultiLoader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIMultiLoader/). 
 
@@ -23,4 +24,5 @@ can't directly invalidate the UI so the feasiblity is still unknown.
 {: .prompt-info }
 
 ## Link to Module
+
 [FringeUIReloader on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/modules/FringeUI/FringeUIReloader.bas)
