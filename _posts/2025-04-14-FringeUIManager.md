@@ -64,7 +64,7 @@ in either `Workbook_BeforeClose` and or `Workbook_Deactivate`.
 ## ClearFringeUI
 
 > WIP
-{: .prompt-info }+
+{: .prompt-info }
 
 ## Link to Module
 
