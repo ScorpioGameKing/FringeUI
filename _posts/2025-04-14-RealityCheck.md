@@ -12,25 +12,86 @@ dynamic string subsections.
 
 ## IsClassModuleLoaded
 
-> WIP
-{: .prompt-info }
+Used to check if a workbook has a class module installed. Defaults to current active workbook.
+```vb
+Public Function IsClassModuleLoaded(name As String, Optional wb As Workbook) As Boolean
+```
+
+To Call:
+```vb
+moduleCheck = RealityCheck.IsClassModuleLoaded ("TargetModule")
+```
+
+Returns 
+```vb
+Boolean
+```
 
 ## IsStandardModuleLoaded
 
-> WIP
-{: .prompt-info }
+Used to check if a workbook has a standard module installed. Defaults to current active workbook.
+```vb
+Public Function IsStandardModuleLoaded(name As String, Optional wb As Workbook) As Boolean
+```
+
+To Call:
+```vb
+moduleCheck = RealityCheck.IsStandardModuleLoaded ("TargetModule")
+```
+
+Returns 
+```vb
+Boolean
+```
 
 ## IsAnyModuleLoaded
 
-> WIP
-{: .prompt-info }
+Used to check if a workbook has a module installed. Defaults to current active workbook.
+```vb
+Public Function IsAnyModuleLoaded(name As String, Optional wb As Workbook) As Boolean
+```
+
+To Call:
+```vb
+moduleCheck = RealityCheck.IsAnyModuleLoaded ("TargetModule")
+```
+
+Returns 
+```vb
+Boolean
+```
 
 ## InCollection
 
-> WIP
-{: .prompt-info }
+Used to check if a collection contains a string key.
+```vb
+Public Function InCollection(col As Collection, key As String) As Boolean
+```
+
+To Call:
+```vb
+collectionCheck = RealityCheck.InCollection(myCollection, "myKey")
+```
+
+Returns:
+```vb
+Boolean
+```
 
 ## ReturnBetweenElements
 
-> WIP
-{: .prompt-info }
+Used to find the substring between keys.
+
+```vb
+Public Function ReturnBetweenElements(sConCat As String, sFirstElement As String, sSecondElement As String) As String
+```
+
+To Call:
+```vb
+stringBetweenKeys = RealityCheck.ReturnBetweenElements("garbageHello World!data", "garbage", "data")
+```
+
+Returns:
+```vb
+"Hello World!"
+```
