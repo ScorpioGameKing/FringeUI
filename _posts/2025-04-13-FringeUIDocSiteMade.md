@@ -1,8 +1,8 @@
 ---
 title: FringeUI First Post!
 date: 2025-04-13 9:46:45 -0500
-categories: [News, Documentation]
-tags: [readme]
+categories: [News, FringeUI]
+tags: [readme, documentation]
 description: The intial post of the FringeUI Documentation Site. This is just a mirror of the Github Repo
 ---
 
@@ -88,7 +88,7 @@ will take the group and button of Mod 2 and append them to Mod 1.
 
 ### FringeUIPackage
 > This will be refactored due potential to name confusion
-{: .prompt-tip }
+{: .prompt-note }
 
 `FringeUIPackage` is the `FringeUIPackage` Builder. All `FringeUIPackages` require a Tab and Group to be able add a component. To create and build a package 
 simply call `YourUIPackage.AddComponentNameHere arg1, arg2, ...` to add your components and pass the `YourUIPackage.uiPackage` to either the `FringeUIMultiLoader` 
