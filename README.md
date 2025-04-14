@@ -1,7 +1,7 @@
 # FringeUI
 A VBA based Solution for your Office Customization Needs
 
-![Example Custom Ribbon with Default Re-Loader and User Made Hello World Buttons](https://github.com/ScorpioGameKing/FringeUI/blob/main/git_assets/images/HelloWordExampleBanner.png)
+![Example Custom Ribbon with Default Re-Loader and User Made Hello World Buttons](https://scorpiogameking.github.io/FringeUI/git_assets/images/HelloWordExampleBanner.png)
 
 ## What is FringeUI?
 I'm glad you asked. `FringeUI` is an incredibly Fringe use-case of VBA to decorate the "Fringe", 
@@ -25,7 +25,8 @@ the Ribbon that works like any other.
 
 ### How to Install Modules
 1. Find and click the "Developer" Tab in the Ribbon.
-> [!IMPORTANT]
+
+[!IMPORTANT]
 > If you are missing the "Developer" Tab go to File -> Options -> Customize Ribbon and Click the 
 > checkbox next to "Developer"
 
@@ -36,28 +37,33 @@ the Ribbon that works like any other.
 ## Install Process (Single UI)
 ### Required Modules
 - Class Module List
-    - FringeUIManager
-    - FringeUIPackage
+    - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
+    - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
 - Module List
-    - RealityCheck
-    - Toaster
+    - [FringeUIReloader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIReloader/)
+    - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
+    - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
 
 ## Install Process (MultiUILoader Module)
 ### Required Modules
 - Class Module List
-    - FringeUIManager
-    - FringeUIMultiLoader
-    - FringeUIPackage
+    - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
+    - [FringeUIMultiLoader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIMultiLoader/)
+    - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
 
 - Module List
-    - FringeUIReloader
-    - RealityCheck
-    - Toaster
+    - [FringeUIReloader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIReloader/)
+    - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
+    - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
 
 ## Make Your First Tab, Group and Button (Tutorial)
+
+[!NOTE]
 > WIP
 
 ## Extend Modules to Support MultiUILoader (Tutorial)
+
+[!NOTE]
 > WIP
 
 ## Module Overview
@@ -74,9 +80,10 @@ When all `FringeUIPackages` have been recived the `FringeUIMultiloader` needs to
 existing Components. For example, If User Mod 1 defines a Tab, group and button while User Mod 2 defines the same tab but a different group and button it 
 will take the group and button of Mod 2 and append them to Mod 1.
 
-![Simplified Flowchart of the MultiLoader Build Process](https://github.com/ScorpioGameKing/FringeUI/blob/main/git_assets/images/MultiLoaderFlowChartSimple.png)
+![Simplified Flowchart of the MultiLoader Build Process](https://scorpiogameking.github.io/FringeUI/git_assets/images/MultiLoaderFlowChartSimple.png)
 
 ### FringeUIPackage
+
 > [!NOTE]
 > This will be refactored due potential to name confusion
 
