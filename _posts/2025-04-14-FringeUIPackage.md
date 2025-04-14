@@ -60,3 +60,6 @@ It should not be manipulated directly and instead handled by the relavant subrou
 
 > WIP
 {: .prompt-info }
+
+## Link to Module
+[FringeUIPackage on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIPackage.cls)

@@ -95,3 +95,6 @@ Returns:
 ```vb
 "Hello World!"
 ```
+
+## Link to Module
+[RealityCheck on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/modules/FringeUI/RealityCheck.bas)

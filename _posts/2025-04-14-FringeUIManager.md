@@ -63,4 +63,7 @@ in either `Workbook_BeforeClose` and or `Workbook_Deactivate`.
 ## ClearFringeUI
 
 > WIP
-{: .prompt-info }
+{: .prompt-info }+
+
+## Link to Module
+[FringeUIManager on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIManager.cls)

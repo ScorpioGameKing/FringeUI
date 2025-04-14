@@ -38,3 +38,6 @@ and the MultiLoader will begin to collapse the UIPackages into a single valid UI
 
 > WIP
 {: .prompt-info }
+
+## Link to Module
+[FringeUIMultiLoader on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIMultiLoader.cls)

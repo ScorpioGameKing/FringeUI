@@ -21,3 +21,6 @@ can't directly invalidate the UI so the feasiblity is still unknown.
 
 > WIP
 {: .prompt-info }
+
+## Link to Module
+[FringeUIReloader on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/modules/FringeUI/FringeUIReloader.bas)
