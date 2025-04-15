@@ -11,7 +11,7 @@ description: An overview of how the RealityCheck works and should be used.
 A Collection of helpful search Functions for checking modules, collections and
 dynamic string subsections.
 
-## IsClassModuleLoaded
+### IsClassModuleLoaded
 
 Used to check if a workbook has a class module installed. Defaults to current active workbook.
 ```vb
@@ -28,7 +28,7 @@ Returns
 Boolean
 ```
 
-## IsStandardModuleLoaded
+### IsStandardModuleLoaded
 
 Used to check if a workbook has a standard module installed. Defaults to current active workbook.
 ```vb
@@ -45,7 +45,7 @@ Returns
 Boolean
 ```
 
-## IsAnyModuleLoaded
+### IsAnyModuleLoaded
 
 Used to check if a workbook has a module installed. Defaults to current active workbook.
 ```vb
@@ -62,7 +62,7 @@ Returns
 Boolean
 ```
 
-## InCollection
+### InCollection
 
 Used to check if a collection contains a string key.
 ```vb
@@ -79,7 +79,7 @@ Returns:
 Boolean
 ```
 
-## ReturnBetweenElements
+### ReturnBetweenElements
 
 Used to find the substring between keys.
 
@@ -97,6 +97,6 @@ Returns:
 "Hello World!"
 ```
 
-## Link to Module
+### Link to Module
 
 [RealityCheck on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/modules/FringeUI/RealityCheck.bas)

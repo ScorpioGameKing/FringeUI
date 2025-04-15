@@ -18,11 +18,11 @@ or [FringeUIMultiLoader](https://scorpiogameking.github.io/FringeUI/posts/Fringe
 Adding to the existing custom UIPackage is fairly simple but the current limitation is removing old components. Without a reference to the `IRibbionUI` we
 can't directly invalidate the UI so the feasiblity is still unknown.
 
-## ReLoadUI
+### ReLoadUI
 
 > WIP
 {: .prompt-info }
 
-## Link to Module
+### Link to Module
 
 [FringeUIReloader on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/modules/FringeUI/FringeUIReloader.bas)

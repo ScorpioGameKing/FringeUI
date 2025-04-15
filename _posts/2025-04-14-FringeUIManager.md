@@ -56,16 +56,16 @@ UIPacakge to either a UIManager or the MultiLoader if provided.
 To handle the cleaning your workbook should also include calls to [ClearFringeUI](#clearfringeui)
 in either `Workbook_BeforeClose` and or `Workbook_Deactivate`.
 
-## BuildFringeUI
+### BuildFringeUI
 
 > WIP
 {: .prompt-info }
 
-## ClearFringeUI
+### ClearFringeUI
 
 > WIP
 {: .prompt-info }
 
-## Link to Module
+### Link to Module
 
 [FringeUIManager on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIManager.cls)

@@ -1,9 +1,9 @@
 ---
-title: FringeUI First Post!
+title: FringeUI Readme
 date: 2025-04-13 9:46:45 -0500
 categories: [News, FringeUI]
 tags: [readme, documentation]
-description: The intial post of the FringeUI Documentation Site. This is just a mirror of the Github Repo
+description: The intial post of the FringeUI Documentation Site. This is a regularly updated Readme
 ---
 
 # FringeUI
@@ -19,7 +19,9 @@ time? Got that ugly **CommandButton** you threw on a blank sheet to help clean u
 More! With `FringeUI` you're a few simple lines away from having a stylish and clean button in
 the Ribbon that works like any other. 
 
-## Current Features
+## Feature List
+
+### Current
 - Custom Tabs
     > Create, name and organize your own custom tabs
 - Custom Groups
@@ -27,13 +29,14 @@ the Ribbon that works like any other.
 - Custom Buttons
     > Create Custom Buttons using built-in icons and your own custom callbacks
 
-## Planned Features
+### Planned
 - Custom Menus
     > When a Group is not enough, list Components together in a handy dropdown
 
+## Installation
+
 ### How to Install Modules
 1. Find and click the "Developer" Tab in the Ribbon.
-
 
 > If you are missing the "Developer" Tab go to File -> Options -> Customize Ribbon and Click the 
 > checkbox next to "Developer"
@@ -43,8 +46,8 @@ the Ribbon that works like any other.
 3. In this Window, Find in the top left the "File" Dropdown and select "Import Module" (Ctrl + M)
 4. Find and install each of the Required Modules Below as needed
 
-## Install Process (Single UI)
-### Required Modules
+### Install Process (Single UI)
+#### Required Modules
 - Class Module List
     - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
     - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
@@ -53,8 +56,8 @@ the Ribbon that works like any other.
     - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
     - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
 
-## Install Process (MultiUILoader Module)
-### Required Modules
+### Install Process (MultiUILoader Module)
+#### Required Modules
 - Class Module List
     - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
     - [FringeUIMultiLoader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIMultiLoader/)
@@ -65,17 +68,19 @@ the Ribbon that works like any other.
     - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
     - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
 
-## Make Your First Tab, Group and Button (Tutorial)
+## Tutorials
+
+### Make Your First Tab, Group and Button (Tutorial)
 
 > WIP
 {: .prompt-info }
 
-## Extend Modules to Support MultiUILoader (Tutorial)
+### Extend Modules to Support MultiUILoader (Tutorial)
 
 > WIP
 {: .prompt-info }
 
-## Module Overview
+## Basic Module Overview
 
 ### FringeUIManager
 `FringeUIManager` is the core UI Injection Class. `FringeUI` takes advantage of the fact the a User has a local instance of the OfficeUI file.

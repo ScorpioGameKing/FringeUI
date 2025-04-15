@@ -28,40 +28,43 @@ can only have 1 Custom Tab and Group. You simply need 1 Tab and Group to have a 
 add multiple tabs, groups and any number of components to each as needed. If you really want 20 tabs with
 1 button each then you can make it.
 
-## uiPackage
+### uiPackage
 This is the actual structured Collection containing the TAGS and XML data for injection by [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/).
 It should not be manipulated directly and instead handled by the relavant subroutines.
 
-## AddTabStruct
+### AddTabStruct
 
 > WIP
 {: .prompt-info }
 
-## AddTab
+### AddTab
 
 > WIP
 {: .prompt-info }
 
-## AddGroupStruct
+### AddGroupStruct
 
 > WIP
 {: .prompt-info }
 
-## AddGroup
+### AddGroup
 
 > WIP
 {: .prompt-info }
 
-## AddButtonXML
+### AddButtonXML
 
 > WIP
 {: .prompt-info }
 
-## AddButton
+> Will Be Renamed to match similar Subroutines
+{: .prompt-info }
+
+### AddButton
 
 > WIP
 {: .prompt-info }
 
-## Link to Module
+### Link to Module
 
 [FringeUIPackage on Github](https://github.com/ScorpioGameKing/FringeUI/blob/main/fringeui/class_modules/FringeUI/FringeUIPackage.cls)
