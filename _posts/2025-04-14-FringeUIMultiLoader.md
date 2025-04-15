@@ -15,6 +15,8 @@ need to be passed to the MultiLoader using [AddUIPackage](#adduipackage). Once a
 have been passed to the MultiLoader you will need to call [BuildMultiUIPackage](#buildmultiuipackage)
 and the MultiLoader will begin to collapse the UIPackages into a single valid UIPackage.
 
+![Simplified Flowchart of the MultiLoader Build Process](https://scorpiogameking.github.io/FringeUI/git_assets/images/MultiLoaderFlowChartSimple.png)
+
 ### Class_Initialize
 
 > WIP

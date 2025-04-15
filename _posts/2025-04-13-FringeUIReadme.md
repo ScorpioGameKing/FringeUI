@@ -33,6 +33,22 @@ the Ribbon that works like any other.
 - Custom Menus
     > When a Group is not enough, list Components together in a handy dropdown
 
+## FringeUI Module List
+
+### Core
+- Class Modules
+    - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
+    - [FringeUIMultiLoader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIMultiLoader/)
+    - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
+
+- Standard Module
+    - [FringeUIReloader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIReloader/)
+
+### External
+- Standard Modules
+    - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
+    - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
+
 ## Installation
 
 ### How to Install Modules
@@ -47,23 +63,22 @@ the Ribbon that works like any other.
 4. Find and install each of the Required Modules Below as needed
 
 ### Install Process (Single UI)
-#### Required Modules
-- Class Module List
+- Class Modules
     - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
     - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
-- Module List
+
+- Module Lists
     - [FringeUIReloader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIReloader/)
     - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
     - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
 
 ### Install Process (MultiUILoader Module)
-#### Required Modules
-- Class Module List
+- Class Modules
     - [FringeUIManager](https://scorpiogameking.github.io/FringeUI/posts/FringeUIManager/)
     - [FringeUIMultiLoader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIMultiLoader/)
     - [FringeUIPackage](https://scorpiogameking.github.io/FringeUI/posts/FringeUIPackage/)
 
-- Module List
+- Standar Modules
     - [FringeUIReloader](https://scorpiogameking.github.io/FringeUI/posts/FringeUIReloader/)
     - [RealityCheck](https://scorpiogameking.github.io/FringeUI/posts/RealityCheck/)
     - [Toaster](https://scorpiogameking.github.io/FringeUI/posts/Toaster/)
@@ -79,37 +94,3 @@ the Ribbon that works like any other.
 
 > WIP
 {: .prompt-info }
-
-## Basic Module Overview
-
-### FringeUIManager
-`FringeUIManager` is the core UI Injection Class. `FringeUI` takes advantage of the fact the a User has a local instance of the OfficeUI file.
-It finds and grabs this file and using a `FringeUIPackage` created through the `FringeUIPackage` Class it will inject prebuilt XML strings for each
-component a User Defines. 
-
-### FringeUIMultiLoader
-`FringeUIMultiLoader` is the supporting framework for allowing indivdual User Modules to provide their own `FringeUIPackages` to be sorted and merged.
-When the `FringeUIMultiLoader` is in use, instead of the User Module building it's `FringeUIPackage`, it will be sent to the `FringeUIMultiLoader` Packages. 
-When all `FringeUIPackages` have been recived the `FringeUIMultiloader` needs to collapse all valid posiblities into a single package, always adding to 
-existing Components. For example, If User Mod 1 defines a Tab, group and button while User Mod 2 defines the same tab but a different group and button it 
-will take the group and button of Mod 2 and append them to Mod 1.
-
-![Simplified Flowchart of the MultiLoader Build Process](https://scorpiogameking.github.io/FringeUI/git_assets/images/MultiLoaderFlowChartSimple.png)
-
-### FringeUIPackage
-
-> This will be refactored due potential to name confusion
-{: .prompt-info }
-
-`FringeUIPackage` is the `FringeUIPackage` Builder. All `FringeUIPackages` require a Tab and Group to be able add a component. To create and build a package 
-simply call `YourUIPackage.AddComponentNameHere arg1, arg2, ...` to add your components and pass the `YourUIPackage.uiPackage` to either the `FringeUIMultiLoader` 
-or `FringeUIManager`
-
-### FringeUIReloader
-Small Standard Module included to provide a default ReLoad Method for `FringeUIManager`'s and `FringeUIMultiLoader`'s default Tool Menu. 
-
-### RealityCheck
-Helpful Libray of Sanity Checks.
-
-### Toaster
-Simple Timed MsgBox Alternative
