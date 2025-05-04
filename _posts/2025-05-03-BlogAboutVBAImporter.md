@@ -164,7 +164,7 @@ End Sub
 
 ![VBA Import](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBImportBut.png)
 
-## UIExportVBComp
+### UIExportVBComp
 
 A FringeUI Button Callback that allows the user to dump all of the `ActiveWorkbook` project
 modules
