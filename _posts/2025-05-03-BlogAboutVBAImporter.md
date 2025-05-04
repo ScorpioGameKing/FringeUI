@@ -162,7 +162,7 @@ Sub UILoadVBComp()
 End Sub
 ```
 
-![VBA Import](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBImport.png)
+![VBA Import](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBImportBut.png)
 
 # UIExportVBComp
 
@@ -177,7 +177,7 @@ Sub UIExportVBComp()
 End Sub
 ```
 
-![VBA Export](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBExport.png)
+![VBA Export](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBExportBut.png)
 
 # InitUI
 
@@ -202,7 +202,7 @@ Sub InitUI(Optional multiLoader As Variant)
 End Sub
 ```
 
-![VBA Importer Group](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBAImportTools.png)
+![VBA Importer Group](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBImportTools.png)
 
 ## What do we gain?
 
