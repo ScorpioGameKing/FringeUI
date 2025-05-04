@@ -6,14 +6,14 @@ tags: [blog, documentation, standard-module, class-module, module]
 description: I dislike the VBA Editor and it's file handling so I made a FringeUI File Handler.
 ---
 
-# The VBA Editor Feels Restrictive
+## The VBA Editor Feels Restrictive
 
 I am personally not a major fan of the VBA Editor provided by Excel. I won't outright call it 
 *bad* but there's many minor things that feel like they are *weighing* me down. And let's be
 honest, at least from my understanding while learning, the VBA Editor is not anywhere close
 to a priority for Microsoft. 
 
-## The UI of Pain
+### The UI of Pain
 
 ![VBA UI](https://scorpiogameking.github.io/FringeUI/git_assets/images/UIofPain.png)
 
@@ -43,7 +43,7 @@ already!" and yeah, I don't like how it works. Often times I'm working across se
 and if I was to use the default File Handling, I need to import and export every file 
 indivually. A minor time sink but one none the less. So that brings us to VBAImporter.
 
-# VBAImporter
+## VBAImporter
 
 Right of the bat, I should refactor this name as it's become more of a file handler and I plan
 to extend it in that way if possible. Moving past this, what is it? VBAImporter is a module 
@@ -51,7 +51,7 @@ for single or bulk, class and standard module importing and exporting. For Ease 
 intended for use with FringUI by providing a simple and easy to use interface. Let's break it
 down.
 
-## LoadVBComp
+### LoadVBComp
 
 This is currently the only Import method, it handles loading single VBA files into the 
 project. 
@@ -103,7 +103,7 @@ jump back to the LOAD label and continue as normal. If the module name is not fo
 project the execution will naturally fall to the LOAD label code. Either way, the given file 
 is imported into given `workbook` and we clean up a little bit on the way out. 
 
-## ExportVBComps
+### ExportVBComps
 
 The only exporter currently, it dumps all valid modules, standard and class, into a given 
 folder path. 
@@ -128,7 +128,7 @@ Incredibly simple in nature and execution. The safety is mostly non existant but
 to ensure the `Path` given is to the inside of a folder. From there we just export the files 
 with the proper extensions.
 
-## DeleteVBComp
+### DeleteVBComp
 
 We saw this earlier and is another simple sub. It tries to remove the given module from the
 project.
@@ -143,13 +143,13 @@ Sub DeleteVBComp(ByVal wb As Workbook, ByVal m As String)
 End Sub
 ```
 
-# FringeUI Additions
+## FringeUI Additions
 
 With everything given above you can easily implement and use this module in code but included
 is a set of FringeUI Compatible Buttons. By Default they will show up in the FringeUI Tools 
 Tab and will be treated as a pack in tool.
 
-## UILoadVBComp
+### UILoadVBComp
 
 A FringeUI Button Callback that allows the user to load or update the `ActiveWorkbook` project
 modules
@@ -179,7 +179,7 @@ End Sub
 
 ![VBA Export](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBExportBut.png)
 
-## InitUI
+### InitUI
 
 The Standard FringeUIPackage Building Sub
 
@@ -204,7 +204,7 @@ End Sub
 
 ![VBA Importer Group](https://scorpiogameking.github.io/FringeUI/git_assets/images/VBImportTools.png)
 
-# What do we gain?
+## What do we gain?
 
 So was this worth it? Personally I feel by making the process of getting files in and out
 of the `Workbook` will actually let development in more *modern* editors like VSCode or
