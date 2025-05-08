@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} VBAImportForm 
-   Caption         =   "VBA Export Options"
+   Caption         =   "VBA Import Options"
    ClientHeight    =   3015
    ClientLeft      =   120
    ClientTop       =   465
@@ -22,15 +22,16 @@ Private Sub ImportButton_Click()
         MsgBox "Invalid Path. Please re-enter the Path", vbOKOnly, "INVALID PATH"
         Exit Sub
     Else
+        If Right(path, 1) <> "\" Then path = path & "\"
         If Name = "ALL" Or Name = "" Then
-            MsgBox "Bulk Import is currently not supported", vbOKOnly, "UNSUPPORTED"
-            Exit Sub
-            VBAImporter.LoadVBComp ActiveWorkbook, path
+            For i = 1 To VBAImportForm.ModuleNameCombo.ListCount - 1
+                VBAImporter.LoadVBComp ActiveWorkbook, path & VBAImportForm.ModuleNameCombo.List(i)
+            Next
         Else
             VBAImporter.LoadVBComp ActiveWorkbook, path & Name
         End If
     End If
-    MsgBox "VBA Has Successfully Been Exported!", vbOKOnly, "EXPORT SUCCESS"
+    MsgBox "VBA Has Successfully Been Imported!", vbOKOnly, "IMPORT SUCCESS"
     Unload Me
 End Sub
 
@@ -43,8 +44,4 @@ Private Sub ModuleComboReload_Click()
     For Each file In folder.Files
         VBAImportForm.ModuleNameCombo.AddItem file.Name
     Next
-End Sub
-
-Private Sub UserForm_Click()
-
 End Sub

@@ -65,6 +65,7 @@ End Sub
 '----- BUTTON STRUCT: A TAG for build, XML to Inject , Tab ID to sort
 Private Sub AddButtonXML(tId As String, gId As String, id As String, label As String, image As String, callback As String)
     Dim button_struct As Collection: Set button_struct = New Collection
+    Dim bt As String
     
     bt = "<mso:button id='" & id & _
     "' label='" & label & _
